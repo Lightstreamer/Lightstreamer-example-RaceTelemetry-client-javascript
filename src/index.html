@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+
+<!--
+  LIGHTSTREAMER - www.lightstreamer.com
+  Web Telemetry Demo
+  
+  Copyright 2013 Weswit s.r.l.
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">  
+  <title>Lightstreamer :: Web Telemetry Demo</title>
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<a href="https://github.com/Weswit/Lightstreamer-example-RaceTelemetry-client-javascript" target="_blank"><img style="position: absolute; top: 0; right: 0; border: 0; z-index:1" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
+<div id="wrap">
+  <table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0" background="img/sfondo_vert.jpg">
+    <tr valign="top">
+      <td width="900" height="100%" background="img/sfondo_or.jpg">
+        <table width="900" height="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+          <td colspan="2" >
+            <div style="height:207px;"><img border="0" src="img/testataC.jpg" width="846" height="207" usemap="#lsmap" /></div>
+            <MAP NAME="lsmap">
+              <AREA SHAPE=POLY COORDS="1,59,43,51,89,0,145,0,139,6,139,24,150,29,216,113,220,110,220,121,213,130,208,136,207,142,196,157,192,163,186,168,175,185,142,206,124,206,0,101,0,80,0,60" href="http://www.lightstreamer.com" alt="Powered By Lightstreamer" target="_blank">
+            </MAP>
+          </td>
+            <td rowspan="7" width="54" background="img/fondo_scacchiera.png" valign="top" align="left"><img src="img/fine_testata.jpg"></td>
+          </tr>
+          <tr>
+          <td width="450" valign="top">
+            <table width="450" border="0" cellspacing="0" cellpadding="0">
+              <tr valign="top">
+              <td colspan="4"><div style="height:42px;"><img src="img/testata_tab1.jpg"></div></td>
+              </tr>
+              <tr valign="top">
+              <td width="15" valign="top"><div class="row17"><img src="img/verdeTime.jpg"></div></td>
+              <td width="180" background="img/bg_time.jpg"><div class="row17"><img src="img/time.jpg" height="17"></div></td>
+              <td width="208" background="img/bg_time.jpg" class="row17time"><div data-source="lightstreamer" data-grid="data" data-row="1" data-field="TIME">-</div></td>
+              <td width="49" valign="top" class="row17"><div class="row17"><img src="img/sec.jpg"></div></td>
+              </tr>
+              <tr valign="top">
+              <td valign="top"><div class="row19"><img src="img/bianco_dist.jpg" width="15" height="19"></div></td>
+              <td background="img/bg_dist.jpg"><div class="row19"><img src="img/distance.jpg" height="17"></div></td>
+              <td class="row19txt" background="img/bg_dist.jpg"><div data-source="lightstreamer" data-grid="data" data-row="1" data-field="Distance">-</div></td>
+              <td><div class="row19"><img src="img/metri.jpg" width="49" height="19"></div></td>
+              </tr>
+              <tr valign="top">
+              <td class="row17"><div class="row17"><img src="img/verde_speed.jpg" width="15" height="17"></div></td>
+              <td class="row17" background="img/bg_speed.jpg"><div class="row17"><img src="img/speed.jpg" height="17"></div></td>
+              <td class="row17txt" background="img/bg_speed.jpg"><div data-source="lightstreamer" data-grid="data" data-row="1" data-field="Speed">-</div></td>
+              <td class="row17"><div class="row17"><img src="img/kmh.jpg" width="49" height="17"></div></td>
+              </tr>
+              <tr valign="top">
+              <td class="row19"><div class="row19"><img src="img/bianco_dist.jpg" width="15" height="19"></div></td>
+              <td class="row19" background="img/bg_rpm.jpg"><div class="row19"><img src="img/engine.jpg" height="19"></div></td>
+              <td class="row19txt" background="img/bg_rpm.jpg"><div data-source="lightstreamer" data-grid="data" data-row="1" data-field="Rpm">-</div></td>
+              <td class="row19"><div class="row19"><img src="img/rpm.jpg" width="49" height="19"></div></td>
+              </tr>
+              <tr valign="top">
+              <td class="row17"><div class="row17"><img src="img/verde_speed.jpg"></div></td>
+              <td class="row17" background="img/bg_gear.jpg"><div class="row17"><img src="img/gear.jpg" height="17"></div></td>
+              <td class="row17txt" background="img/bg_gear.jpg"><div data-source="lightstreamer" data-grid="data" data-row="1" data-field="Gear_output">-</div></td>
+              <td class="row17"><div class="row17"><img src="img/gearD.jpg" width="49" height="17"></div></td>
+              </tr>
+              <tr valign="top">
+              <td class="row19"><div class="row19"><img src="img/bianco_dist.jpg" width="15" height="19"></div></td>
+              <td class="row19" background="img/bg_abs.jpg"><div class="row19"><img src="img/abs.jpg" height="19"></div></td>
+              <td class="row19txt" background="img/bg_abs.jpg"><div data-source="lightstreamer" data-grid="data" data-row="1" data-field="ABS">-</div></td>
+              <td class="row19"><div class="row19"><img src="img/absD.jpg" width="49" height="19"></div></td>
+              </tr>
+              <tr>
+              <td class="row17"><div class="row17"><img src="img/verde_speed.jpg" width="15" height="17"></div></td>
+              <td class="row17" background="img/bg_lap.jpg"><div class="row17"><img src="img/lap.jpg" height="17"></div></td>
+              <td class="row17txt" background="img/bg_lap.jpg"><div data-source="lightstreamer" data-grid="data" data-row="1" data-field="LAP">-</div></td>
+              <td class="row17"><div class="row17"><img src="img/lapD.jpg" width="49" height="17"></div></td>
+              </tr>
+              <tr>
+              <td colspan="4"><img src="img/riganera.jpg"></td>
+              </tr>
+          </table>
+          </td>
+          <td width="396" align="left" valign="top"><img src="img/carC.jpg" width="396" height="182"></td>
+          </tr>
+          <tr>
+          <td colspan="2">
+            <table width="846" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="15" bgcolor="#000000"><img src="img/verde_sfumato.jpg"></td>
+                <td width="167" valign="top">
+                  <table width="167" border="0" cellspacing="0" cellpadding="0" background="img/bg_tabspeed.jpg">
+                    <tr>
+                      <td valign="top"><img src="img/int_speed.jpg" width="167" height="20"></td>
+                    </tr>
+                    <tr>
+                      <td valign="top" height="97">
+                        <div class="lsgbox" data-source="lightstreamer" id="speedChart" ></div>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+                <td width="4" bgcolor="#000000"><img src="img/2nero.jpg"></td>
+                <td width="167" valign="top">
+                  <table width="167" border="0" cellspacing="0" cellpadding="0" background="img/bg_tabspeed.jpg">
+                    <tr>
+                      <td valign="top"><img src="img/int_giri.jpg" width="167" height="20"></td>
+                    </tr>
+                    <tr>
+                      <td valign="top" height="97">
+                        <div class="lsgbox" data-source="lightstreamer" id="rpmChart" ></div>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+                <td width="4" bgcolor="#000000"><img src="img/2nero.jpg"></td>
+                <td width="450" valign="top">
+                  <table width="482"  border="0" cellspacing="0" cellpadding="0" background="img/bg_tabspeed.jpg">
+                    <tr valign="top">
+                      <td valign="top" width="71" height="20"><img src="img/int_lap.jpg" height="20"></td>
+                      <td valign="top" width="138" height="20"><img src="img/int_laptime.jpg" height="20"></td>
+                      <td valign="top" width="115" height="20"><img src="img/int_velmedia.jpg" height="20"></td>
+                      <td valign="top" width="148" height="20"><img src="img/int_totvelmedia.jpg" height="20"></td>
+                    </tr>
+                  </table>
+                  <div class="scrollDiv" id="actTBody" background="img/bg_tabspeed.jpg">
+                    <table width="462" border="0" cellspacing="0" cellpadding="0" background="img/bg_tabspeed.jpg">
+                      <tr>
+                        <td valign="top" width="64"></td>
+                        <td valign="top" width="133"></td>
+                        <td valign="top" width="109"></td>
+                        <td valign="top"></td>
+                      </tr>
+                      <tr id="lap" data-source="lightstreamer">
+                        <td valign="top" class="dati" width="64"><div data-source="lightstreamer" data-field="lap"></div></td>
+                        <td valign="top" class="dati" width="133"><div data-source="lightstreamer" data-field="lapTime"></div></td>
+                        <td valign="top" class="dati" width="109"><div data-source="lightstreamer" data-field="avgSpeed"></div></td>
+                        <td valign="top" class="dati"><div data-source="lightstreamer" data-field="avgSpeedTot"></div></td>
+                      </tr>
+                    </table>
+                  </div>
+                </td>
+                
+              </tr>
+            </table>
+          </td>
+          </tr>
+          <tr>
+          <td colspan="2"><img src="img/riga_orC.jpg"></td>
+          </tr>
+          <tr>
+          <td colspan="2" style="font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 7pt; color: #ffffff; background: #000000; font-weight: normal; text-align: center">
+          Copyright &copy; 2004-2012. All rights reserved.
+          </td>
+          </tr>
+          <tr>
+          <td colspan="2" height="100%" style="font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 7pt; color: #ffffff; background: #000000; font-weight: normal; text-align: center">
+          &nbsp;</td>
+          </tr>
+        </table>
+      </td>
+      <td width="50%">&nbsp;</td>
+    </tr>
+  </table>
+</div>
+
+<script src="js/require.js"></script>
+<script src="js/lightstreamer.js"></script>
+<script type="text/javascript">
+
+/////////////////////////////////Subscriptions-Charts-Grids
+
+  require(["js/lsClient","Subscription","StaticGrid","DynaGrid","Chart","SimpleChartListener"], 
+    function(lsClient,Subscription,StaticGrid,DynaGrid,Chart,SimpleChartListener) {
+  
+    //will show driver data in a grid
+    var dataGrid = new StaticGrid("data",true);
+    dataGrid.setAutoCleanBehavior(true,false);
+    dataGrid.addListener({
+      onVisualUpdate: function(key,info) {
+        if (info == null) {
+          return;
+        }
+        
+        var time = info.getChangedFieldValue("TIME");
+        if (time != null) {
+          time /= 1000;
+          info.setCellValue("TIME",time);
+        }
+        
+        var distance = info.getChangedFieldValue("Distance");
+        if (distance != null) {
+          distance = Math.round((distance * 1000));
+          info.setCellValue("Distance",distance);
+        }
+      }
+    });
+    
+    var minX = 0;
+    var maxX = 150000;
+    
+    //will draw a time/rpm chart
+    var rpmChart = new Chart("rpmChart",true);
+    rpmChart.setAutoCleanBehavior(true,false);
+    rpmChart.configureArea("lsgbox",96,167,0,0);
+    rpmChart.positionXAxis(minX, maxX);
+    rpmChart.setXAxis("TIME");
+    rpmChart.addYAxis("Rpm");
+    rpmChart.addListener({
+      onNewLine: function(key,newChartLine,nowX,nowY) {
+        newChartLine.setStyle("blue","black",1,1);
+        newChartLine.positionYAxis(1900,30000);
+      }
+    });
+ 
+    
+    //will draw a time/speed chart
+    var speedChart = new Chart("speedChart",true);
+    speedChart.setAutoCleanBehavior(true,false);
+    speedChart.configureArea("lsgbox",96,167,0,0);
+    speedChart.positionXAxis(minX, maxX);
+    speedChart.setXAxis("TIME");
+    speedChart.addYAxis("Speed");
+    speedChart.addListener({
+      onNewLine: function(key,newChartLine,nowX,nowY) {
+        newChartLine.setStyle("blue","black",1,1);
+        newChartLine.positionYAxis(70,360);
+      }
+    });
+    
+    //Will show laps data
+    var lapsGrid = new DynaGrid("lap",true);
+    lapsGrid.setAddOnTop(false);
+    lapsGrid.setAutoScroll("ELEMENT","actTBody");
+    lapsGrid.setMaxDynaRows(100);
+    lapsGrid.setAutoCleanBehavior(true,false);
+    lapsGrid.addListener({
+      onVisualUpdate: function(key,info,domNode) {
+        if (info == null) {
+          return;
+        }
+   
+        var val = info.getChangedFieldValue("lapTime");
+        if (val != null) {
+          val /= 1000;
+          info.setCellValue("lapTime",formatDecimal(val,2,true));
+        }
+        
+        formatDecimalField(info,"avgSpeed");
+        formatDecimalField(info,"avgSpeedTot");
+      }
+    });
+  
+    //First Subscription, subscribes to driver's data
+    var driverSubscription = new Subscription("MERGE", "P_driver_1", ["TIME","Distance","Speed","Rpm","Gear_output","ABS","LAP"]);
+    driverSubscription.setDataAdapter("FORMULA1_ADAPTER");
+    driverSubscription.setRequestedSnapshot("yes");
+    
+    driverSubscription.addListener(dataGrid);
+    lsClient.subscribe(driverSubscription);
+    
+    //Second Subscription, subscribes to the same item as the first subscription, but poses a limit on the frequency of the updates
+    var limitedDriverSubscription = new Subscription("MERGE", "P_driver_1", ["TIME","Speed","Rpm","LAP"]);
+    limitedDriverSubscription.setDataAdapter("FORMULA1_ADAPTER");
+    limitedDriverSubscription.setRequestedSnapshot("yes");
+    limitedDriverSubscription.setRequestedMaxFrequency(2.0); //<- see
+
+    limitedDriverSubscription.addListener({
+      onItemUpdate: function(info) {
+        if (info.isValueChanged("LAP")) {
+          rpmChart.clean();
+          speedChart.clean();
+        }
+      }
+    });
+    limitedDriverSubscription.addListener(rpmChart);
+    limitedDriverSubscription.addListener(speedChart);
+    lsClient.subscribe(limitedDriverSubscription);
+    
+    //Third Subscription, subscribes on driver's laps data
+    var lapsSubscription =  new Subscription("DISTINCT", "L_driver_1", ["lap","lapTime","avgSpeed","avgSpeedTot"]);
+    lapsSubscription.setDataAdapter("FORMULA1_ADAPTER");
+    lapsSubscription.setRequestedSnapshot("no");
+    
+    lapsSubscription.addListener(lapsGrid);
+    lsClient.subscribe(lapsSubscription);
+  });
+  
+  
+/////////////////////////////////format values
+
+  function formatDecimalField(info, field) {
+    var newValue = info.getChangedFieldValue(field);
+    if (newValue != null) {
+      var formattedVal = formatDecimal(newValue, 2, true);
+      info.setCellValue(field,formattedVal);
+    }
+  }
+
+  //format a decimal number to a fixed number of decimals 
+  function formatDecimal(value, decimals, keepZero) {
+    var mul = new String("1");
+    var zero = new String("0");
+    for (var i = decimals; i > 0; i--) {
+      mul += zero;
+    }
+    value = Math.round(value * mul);
+    value = value / mul;
+    var strVal = new String(value);
+    if (!keepZero) {
+      return strVal;  
+    }
+    
+    var nowDecimals = 0;
+    var dot = strVal.indexOf(".");
+    if (dot == -1) {
+      strVal += ".";
+    } else {
+       nowDecimals = strVal.length - dot - 1;
+    }
+    for (var i = nowDecimals; i < decimals; i++) {
+      strVal = strVal + zero;
+    }
+      
+    return strVal;
+  
+  }  
+  
+  
+</script>
+
+</body>
+</html>
+
+
+
+  
+    
+

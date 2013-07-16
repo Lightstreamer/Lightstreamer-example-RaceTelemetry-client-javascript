@@ -1,0 +1,91 @@
+/*
+ * LIGHTSTREAMER - www.lightstreamer.com
+ * Web Telemetry Demo
+ *
+ *  Copyright 2013 Weswit Srl
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+body {
+  margin-left: 0px;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+}
+.row17 {
+  font-family:Verdana, Arial, Helvetica, sans-serif;
+  font-size:12px;
+  height:17px;
+}
+.row17time {
+  font-family:Verdana, Arial, Helvetica, sans-serif;
+  font-size:12px;
+  color:#FF2424;
+  font-weight:bold;
+  padding-right:0px;
+  text-align:right;
+  height:17px;
+  vertical-align:middle;
+}
+.row17txt {
+  font-family:Verdana, Arial, Helvetica, sans-serif;
+  font-size:12px;
+  color:#012BFF;
+  font-weight:bold;
+  padding-right:0px;
+  text-align:right;
+  height:17px;
+  vertical-align:middle;
+}
+.row19 {
+  font-size:12px;
+  height:19px;
+}
+.row19txt {
+  font-family:Verdana, Arial, Helvetica, sans-serif;
+  font-size:12px;
+  color:#012BFF;
+  font-weight:bold;
+  padding-right:0px;
+  text-align:right;
+  height:19px;
+  vertical-align:middle;
+}
+.dati {
+  font-family:Verdana, Arial, Helvetica, sans-serif;
+  font-size:12px;
+  color:#012BFF;
+  font-weight:bold;
+  padding-right:6px;
+  text-align:right;
+  height:17px;
+}
+.scrollDiv {
+  background-image:url(../img/bg_tabspeed.jpg);
+  overflow:scroll; 
+  width:482px; 
+  height:94px; 
+  background-color:#D6E45E; 
+  scrollbar-arrow-color:#000000;
+  scrollbar-base-color:#D6E45E; 
+  scrollbar-face-color:#D6E45E; 
+  scrollbar-highlight-color:#C2D4DA;
+  scrollbar-shadow-color:#7E8738;
+}
+.lsgbox {
+  background: url(../img/bg_tabspeed.jpg); 
+}
+#wrap {
+  width: 900px;
+  margin: 0 auto;
+}
