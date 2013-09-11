@@ -1,4 +1,3 @@
-
 # Lightstreamer Race Telemetry Demo Client for JavaScript #
 
 This project includes a simple web client front-end example for the Lightstreamer Race Telemetry Demo Adapter.
@@ -54,7 +53,7 @@ The demo are now ready to be launched.
 
 ## Lightstreamer Adapters needed by these demo clients ##
 
-* (To be add: Lightstreamer Race Telemetry Demo Adapter)
+* [Lightstreamer Race Telemetry Demo Adapter](https://github.com/Weswit/Lightstreamer-example-RaceTelemetry-adapter-java)
 * [Lightstreamer Reusable Metadata Adapter in Java](https://github.com/Weswit/Lightstreamer-example-ReusableMetadata-adapter-java)
 
 ## Similar demo clients that may interest you ##
