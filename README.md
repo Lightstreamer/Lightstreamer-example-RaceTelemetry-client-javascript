@@ -1,6 +1,6 @@
 # Lightstreamer Race Telemetry Demo Client for JavaScript #
 
-This project includes a simple web client front-end example for the Lightstreamer Race Telemetry Demo Adapter.
+This project includes a simple web client front-end example for the [Lightstreamer Race Telemetry Demo Adapter](https://github.com/Weswit/Lightstreamer-example-RaceTelemetry-adapter-java).
 
 ## Web-Telemetry Demo ##
 
@@ -37,7 +37,7 @@ Before you can run the demo some dependencies need to be solved:
 
 You can deploy this demo in order to use the Lightstreamer server as Web server or in any external Web Server you are running. 
 If you choose the former case please create the folders "<LS_HOME>/pages/demos/RaceTelemetryDemo" then copy here the contents of the /src folder of this project.<br>
-The client demo configuration assumes that Lightstreamer Server, Lightstreamer Adapters and this client are launched on the same machine. Hence the [FORMULA1_ADAPTER]() and [LiteralBasedProvider](https://github.com/Weswit/Lightstreamer-example-ReusableMetadata-adapter-java) Adapters have to be deployed in your local Lightstreamer server instance.<br>
+The client demo configuration assumes that Lightstreamer Server, Lightstreamer Adapters and this client are launched on the same machine. Hence the [FORMULA1_ADAPTER](https://github.com/Weswit/Lightstreamer-example-RaceTelemetry-adapter-java) and [LiteralBasedProvider](https://github.com/Weswit/Lightstreamer-example-ReusableMetadata-adapter-java) Adapters have to be deployed in your local Lightstreamer server instance.<br>
 If you need to targeting a different Lightstreamer server please search this line:
 ```js
 var lsClient = new LightstreamerClient(protocolToUse+"//localhost:8080","DEMO");
