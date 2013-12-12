@@ -1,6 +1,6 @@
-# Lightstreamer Race Telemetry Demo Client for JavaScript #
+# Lightstreamer - Race Telemetry Demo - HTML Client #
 
-This project includes a simple web client front-end example for the [Lightstreamer Race Telemetry Demo Adapter](https://github.com/Weswit/Lightstreamer-example-RaceTelemetry-adapter-java).
+This project includes a simple web client front-end example for the [Lightstreamer - Race Telemetry Demo - Java SE Adapter](https://github.com/Weswit/Lightstreamer-example-RaceTelemetry-adapter-java).
 
 ## Web-Telemetry Demo ##
 
@@ -53,12 +53,12 @@ The demo are now ready to be launched.
 
 ## Lightstreamer Adapters needed by this demo client ##
 
-* [Lightstreamer Race Telemetry Demo Adapter](https://github.com/Weswit/Lightstreamer-example-RaceTelemetry-adapter-java)
-* [Lightstreamer Reusable Metadata Adapter in Java](https://github.com/Weswit/Lightstreamer-example-ReusableMetadata-adapter-java)
+* [Lightstreamer - Race Telemetry Demo - Java SE  Adapter](https://github.com/Weswit/Lightstreamer-example-RaceTelemetry-adapter-java)
+* [Lightstreamer - Reusable Metadata Adapters - Java SE Adapter](https://github.com/Weswit/Lightstreamer-example-ReusableMetadata-adapter-java)
 
 ## Similar demo clients that may interest you ##
 
-* [Lightstreamer StockList Demo Client for JavaScript](https://github.com/Weswit/Lightstreamer-example-StockList-client-javascript)
+* [Lightstreamer - Stock-List Demos -HTML Clients](https://github.com/Weswit/Lightstreamer-example-StockList-client-javascript)
 
 # Lightstreamer Compatibility Notes #
 
