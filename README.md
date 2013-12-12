@@ -2,8 +2,6 @@
 
 This project includes a simple web client front-end example for the [Lightstreamer - Race Telemetry Demo - Java SE Adapter](https://github.com/Weswit/Lightstreamer-example-RaceTelemetry-adapter-java).
 
-## Web-Telemetry Demo ##
-
 <table>
   <tr>
     <td style="text-align: left">
@@ -58,7 +56,7 @@ The demo are now ready to be launched.
 
 ## Similar demo clients that may interest you ##
 
-* [Lightstreamer - Stock-List Demos -HTML Clients](https://github.com/Weswit/Lightstreamer-example-StockList-client-javascript)
+* [Lightstreamer - Stock-List Demos - HTML Clients](https://github.com/Weswit/Lightstreamer-example-StockList-client-javascript)
 
 # Lightstreamer Compatibility Notes #
 
