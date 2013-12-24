@@ -1,5 +1,7 @@
 # Lightstreamer - Race Telemetry Demo - HTML Client #
 
+<!-- START DESCRIPTION lightstreamer-example-racetelemetry-client-javascript -->
+
 This project includes a simple web client front-end example for the [Lightstreamer - Race Telemetry Demo - Java Adapter](https://github.com/Weswit/Lightstreamer-example-RaceTelemetry-adapter-java).
 
 <table>
@@ -22,6 +24,8 @@ The demo includes the following client-side technologies:
 * A [Subscription](http://www.lightstreamer.com/docs/client_javascript_uni_api/Subscription.html) containing 1 item, subscribed to in <b>MERGE</b> mode, with some of the metrics pertaining to the car, feeding a [StaticGrid](http://www.lightstreamer.com/docs/client_javascript_uni_api/StaticGrid.html).
 * A [Subscription](http://www.lightstreamer.com/docs/client_javascript_uni_api/Subscription.html) containing 1 item, subscribed to in <b>DISTINCT</b> mode, with the data for each lap feeding a [DynaGrid](http://www.lightstreamer.com/docs/client_javascript_uni_api/DynaGrid.html).
 * A [Subscription](http://www.lightstreamer.com/docs/client_javascript_uni_api/Subscription.html) containing 1 item (the same of the first Subscription but at a lower frequency), subscribed to in <b>MERGE</b> mode feeding two [Chart](http://www.lightstreamer.com/docs/client_javascript_uni_api/Chart.html)s, used to plot the speed and the engine RPM.
+
+<!-- END DESCRIPTION lightstreamer-example-racetelemetry-client-javascript -->
 
 # Deploy #
 
@@ -51,8 +55,11 @@ The demo are now ready to be launched.
 
 ## Lightstreamer Adapters needed by this demo client ##
 
+<!-- START RELATED_ENTRIES -->
 * [Lightstreamer - Race Telemetry Demo - Java SE  Adapter](https://github.com/Weswit/Lightstreamer-example-RaceTelemetry-adapter-java)
 * [Lightstreamer - Reusable Metadata Adapters - Java Adapter](https://github.com/Weswit/Lightstreamer-example-ReusableMetadata-adapter-java)
+
+<!-- END RELATED_ENTRIES -->
 
 ## Similar demo clients that may interest you ##
 
