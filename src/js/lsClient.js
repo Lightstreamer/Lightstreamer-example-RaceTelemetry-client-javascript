@@ -1,5 +1,5 @@
 /*
-  Copyright 2013 Weswit Srl
+  Copyright 2014 Weswit Srl
 
   Licensed under the Apache License, Version 2.0 (the "License");
   you may not use this file except in compliance with the License.
@@ -19,7 +19,7 @@ define(["LightstreamerClient","StatusWidget"],function(LightstreamerClient,Statu
     var protocolToUse = document.location.protocol != "file:" ? document.location.protocol : "http:";
     var lsClient = new LightstreamerClient(protocolToUse+"//localhost:8080","F1Telemetry");
     
-    lsClient.connectionSharing.enableSharing("DemoCommonConnection", "ATTACH", "CREATE");
+    lsClient.connectionSharing.enableSharing("F1DemoCommonConnection", "ATTACH", "CREATE");
     lsClient.addListener(new StatusWidget("left", "0px", true));
     lsClient.connect();
     
