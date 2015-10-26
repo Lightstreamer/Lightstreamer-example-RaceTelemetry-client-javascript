@@ -2,7 +2,7 @@
 
 <!-- START DESCRIPTION lightstreamer-example-racetelemetry-client-javascript -->
 
-This project includes a simple web client front-end example for the [Lightstreamer - Race Telemetry Demo - Java Adapter](https://github.com/Weswit/Lightstreamer-example-RaceTelemetry-adapter-java).
+This project includes a simple web client front-end example for the [Lightstreamer - Race Telemetry Demo - Java Adapter](https://github.com/Lightstreamer/Lightstreamer-example-RaceTelemetry-adapter-java).
 
 ## Live Demo
 [![screenshot](screen_telemetry_large.png)](http://demos.lightstreamer.com/WebTelemetryDemo)<br>
@@ -25,7 +25,7 @@ The demo includes the following client-side functionalities:
 
 If you want to install a version of this demo pointing to your local Lightstreamer Server, follow these steps:
 
-* Note that, as prerequisite, the [Lightstreamer - Race Telemetry Demo - Java Adapter](https://github.com/Weswit/Lightstreamer-example-RaceTelemetry-adapter-java)  has to be deployed on your local Lightstreamer Server instance. Please check out that project and follow the installation instructions provided with it.
+* Note that, as prerequisite, the [Lightstreamer - Race Telemetry Demo - Java Adapter](https://github.com/Lightstreamer/Lightstreamer-example-RaceTelemetry-adapter-java)  has to be deployed on your local Lightstreamer Server instance. Please check out that project and follow the installation instructions provided with it.
 * Launch Lightstreamer Server.
 * Get the `lightstreamer.js` file from the [latest Lightstreamer distribution](http://www.lightstreamer.com/download) and put it in the `src/js` folder of the demo. Alternatively, you can build a `lightstreamer.js` file from the 
 [online generator](http://www.lightstreamer.com/docs/client_javascript_tools/generator.html). In that case, be sure to include the LightstreamerClient, Subscription, DynaGrid, StaticGrid, Chart, SimpleChartListener, and StatusWidget modules and to use the "Use AMD" version.
@@ -49,14 +49,14 @@ The demo is now ready to be launched.
 ### Lightstreamer Adapters Needed by This Demo Client
 
 <!-- START RELATED_ENTRIES -->
-* [Lightstreamer - Race Telemetry Demo - Java SE  Adapter](https://github.com/Weswit/Lightstreamer-example-RaceTelemetry-adapter-java)
-* [Lightstreamer - Reusable Metadata Adapters - Java Adapter](https://github.com/Weswit/Lightstreamer-example-ReusableMetadata-adapter-java)
+* [Lightstreamer - Race Telemetry Demo - Java SE  Adapter](https://github.com/Lightstreamer/Lightstreamer-example-RaceTelemetry-adapter-java)
+* [Lightstreamer - Reusable Metadata Adapters - Java Adapter](https://github.com/Lightstreamer/Lightstreamer-example-ReusableMetadata-adapter-java)
 
 <!-- END RELATED_ENTRIES -->
 
 ### Related Projects
 
-* [Lightstreamer - Stock-List Demos - HTML Clients](https://github.com/Weswit/Lightstreamer-example-StockList-client-javascript)
+* [Lightstreamer - Stock-List Demos - HTML Clients](https://github.com/Lightstreamer/Lightstreamer-example-StockList-client-javascript)
 
 ## Lightstreamer Compatibility Notes
 
