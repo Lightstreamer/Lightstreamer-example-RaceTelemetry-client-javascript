@@ -6,7 +6,7 @@ This project includes a simple web client front-end example for the [Lightstream
 
 ## Live Demo
 [![screenshot](screen_telemetry_large.png)](http://demos.lightstreamer.com/WebTelemetryDemo)<br>
-###[![](http://demos.lightstreamer.com/site/img/play.png) View live demo](http://demos.lightstreamer.com/WebTelemetryDemo)
+### [![](http://demos.lightstreamer.com/site/img/play.png) View live demo](http://demos.lightstreamer.com/WebTelemetryDemo)
 
 ## Details
 
