@@ -5,8 +5,8 @@
 This project includes a simple web client front-end example for the [Lightstreamer - Race Telemetry Demo - Java Adapter](https://github.com/Lightstreamer/Lightstreamer-example-RaceTelemetry-adapter-java).
 
 ## Live Demo
-[![screenshot](screen_telemetry_large.png)](http://demos.lightstreamer.com/WebTelemetryDemo)<br>
-### [![](http://demos.lightstreamer.com/site/img/play.png) View live demo](http://demos.lightstreamer.com/WebTelemetryDemo)
+[![screenshot](screen_telemetry_large.png)](https://demos.lightstreamer.com/WebTelemetryDemo/)<br>
+### [![](http://demos.lightstreamer.com/site/img/play.png) View live demo](https://demos.lightstreamer.com/WebTelemetryDemo/)
 
 ## Details
 
