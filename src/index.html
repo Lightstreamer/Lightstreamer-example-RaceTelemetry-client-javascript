@@ -278,7 +278,7 @@
     var limitedDriverSubscription = new Subscription("MERGE", "P_driver_1", ["TIME","Speed","Rpm","LAP"]);
     limitedDriverSubscription.setDataAdapter("FORMULA1_ADAPTER");
     limitedDriverSubscription.setRequestedSnapshot("yes");
-    limitedDriverSubscription.setRequestedMaxFrequency(2.0); //<- see
+    limitedDriverSubscription.setRequestedMaxFrequency("2.0"); //<- see
 
     limitedDriverSubscription.addListener({
       onItemUpdate: function(info) {
