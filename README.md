@@ -27,10 +27,7 @@ If you want to install a version of this demo pointing to your local Lightstream
 
 * Note that, as prerequisite, the [Lightstreamer - Race Telemetry Demo - Java Adapter](https://github.com/Lightstreamer/Lightstreamer-example-RaceTelemetry-adapter-java)  has to be deployed on your local Lightstreamer Server instance. Please check out that project and follow the installation instructions provided with it.
 * Launch Lightstreamer Server.
-* Get the `lightstreamer.min.js` file for Web Client SDK version 8.0.x from [npm](https://www.npmjs.com/package/lightstreamer-client-web/v/8.0.7) or [unpkg](https://unpkg.com/lightstreamer-client-web@8.0/lightstreamer.min.js) and put it in the `src/js` folder of the demo.
-  Alternatively, you can generate a customized lightstreamer.min.js library containing only the classes you actually use;
-  see the build instructions on the [GitHub page](https://github.com/Lightstreamer/Lightstreamer-lib-client-javascript#building).
-  In that case, be sure to include the LightstreamerClient, Subscription, DynaGrid, StaticGrid, Chart, SimpleChartListener, ConnectionSharing, and StatusWidget modules.
+* Get the `lightstreamer.min.js` file from [npm](https://www.npmjs.com/package/lightstreamer-client-web) or [unpkg](https://unpkg.com/lightstreamer-client-web/lightstreamer.min.js) and put it in the `src/js` folder of the demo.
 * Get the `require.js file` from [requirejs.org](http://requirejs.org/docs/download.html) and put it in the `src/js` folder of the demo.
 
 You can deploy this demo to use the Lightstreamer server as Web server or in any external Web Server you are running. 
@@ -62,4 +59,4 @@ The demo is now ready to be launched.
 
 ## Lightstreamer Compatibility Notes
 
-* Compatible with Lightstreamer JavaScript Client library version 6.0 to 8.0.x (installation instructions for version 8.0.x).
+* Compatible with Lightstreamer JavaScript Client library version 6.0 or newer.
